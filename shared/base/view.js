@@ -493,6 +493,8 @@ BaseView.attach = function(app, parentView, callback) {
         view.attach($el, parentView);
         cb(null, view);
       });
+    } else {
+      cb(null, null);
     }
   }, function(err, views) {
     // no error handling originally
